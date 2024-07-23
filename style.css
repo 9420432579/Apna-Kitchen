@@ -1,0 +1,250 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+    padding: 1rem 2rem;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    background: url('a.jpg') no-repeat center center/cover; /* Adjust the URL as needed */
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #cdcccc;
+    text-align: center;
+    position: relative;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Adds a semi-transparent background for better text readability */
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem; /* Decrease font size */
+    margin-bottom: 1rem; /* Adjust margin */
+    text-transform: uppercase;
+}
+
+.hero-section p {
+    font-size: 1.2rem; /* Decrease font size */
+    margin-bottom: 1.5rem; /* Adjust margin */
+}
+
+.hero-section a.btn {
+    font-size: 1rem; /* Decrease font size */
+    padding: 0.5rem 1rem; /* Adjust padding */
+}
+
+
+/* About Section Styles */
+.about-section {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+}
+
+.about-section .section-heading {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+}
+
+/* Carousel Section Styles */
+.carousel-section {
+    padding: 2rem 0;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+}
+
+/* Reservation Section Styles */
+.reservation-section {
+    padding: 4rem 0;
+    background-color: #f8f9fa; /* Light background color */
+}
+
+.form-container {
+    background-color: #ffffff; /* White background for the box */
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 2rem; /* Padding inside the box */
+    margin: 0 auto; /* Center the box */
+    max-width: 600px; /* Max width of the box */
+    width: 100%; /* Ensure the width is full within the container */
+}
+
+.section-heading {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333; /* Dark color for headings */
+    text-align: center; /* Center the heading */
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333; /* Dark color for labels */
+}
+
+.form-control {
+    border-radius: 0.25rem; /* Rounded corners for form controls */
+    border: 1px solid #ced4da; /* Light border color */
+    box-shadow: none; /* Remove box-shadow */
+}
+
+.form-control:focus {
+    border-color: #007bff; /* Blue border on focus */
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25); /* Blue shadow on focus */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Primary color for button */
+    border-color: #007bff; /* Border color for button */
+    padding: 0.75rem 1.25rem; /* Button padding */
+    font-size: 1rem; /* Button text size */
+    border-radius: 0.25rem; /* Rounded corners for button */
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    border-color: #004085; /* Darker border on hover */
+}
+
+/* Center the row vertically */
+.row.justify-content-center {
+    min-height: 100vh; /* Full viewport height for vertical centering */
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* Contact Section Styles */
+.contact-section {
+    padding: 4rem 0;
+    background-color: #595a5c; /* Dark background for contrast */
+    color: #ffffff; /* White text color for readability */
+}
+
+.contact-section .section-heading {
+    font-size: 2rem; /* Size of the section heading */
+    margin-bottom: 1.5rem;
+    font-weight: bold; /* Bold heading for emphasis */
+    text-transform: uppercase; /* Uppercase text for a strong appearance */
+    text-align: center; /* Center-align headings */
+}
+
+.contact-section p {
+    font-size: 1.1rem; /* Slightly larger text for readability */
+    line-height: 1.6; /* Improved line height for better readability */
+    margin-bottom: 1rem; /* Space below paragraphs */
+    text-align: center; /* Center-align text within paragraphs */
+}
+
+/* Center the columns within the row */
+.contact-section .row {
+    display: flex;
+    justify-content: center; /* Center columns horizontally */
+}
+
+/* Ensure each column is centered */
+.contact-section .col-lg-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content within each column */
+    text-align: center; /* Center-align text within columns */
+    margin-bottom: 2rem; /* Space below columns */
+}
+
+
+
+/* Footer Section Styles */
+.footer-section {
+    background-color: #03080e;
+    color: #fff;
+    padding: 1.5rem 0;
+}
+
+.footer-section p {
+    margin: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section p {
+        font-size: 1.2rem;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+
+    .about-section .section-heading, .reservation-section .section-heading, .contact-section .section-heading {
+        text-align: center;
+    }
+
+    .carousel-item img {
+        height: 300px;
+    }
+}
